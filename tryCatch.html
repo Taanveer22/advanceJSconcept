@@ -4,9 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>try catch</title>
+    <style>
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        text-align: center;
+      }
+
+      #age{
+        padding: 20px 80px;
+        font-size: larger;
+      }
+
+      #error{
+        color : red;
+        font-size: xx-large;
+        font-weight: 800;
+      }
+
+      #submit-btn{
+        padding : 20px 40px;
+        margin-left: 20px;
+        font-size: large;
+      }
+    </style>
   </head>
   <body>
-    <h1>try catch finally concept</h1>
+    <h1>error handleing manually try catch finally concept</h1>
+    <section id="container">
+      <div class="">
+        <h2>create custom error using try and catch</h2>
+        <input type="text" id="age" placeholder="Enter Your Age" />
+        <button id="submit-btn" type="submit" onclick="checkAge()">Submit</button>
+        <p id="error">Error</p>
+      </div>
+    </section>
     <script src="./tryCatch.js"></script>
   </body>
 </html>

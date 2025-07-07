@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        padding: 20px 40px;
+        background-color: aquamarine;
+        border-radius: 5px;
+        font-size: x-large;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="loadByPromise()">fetch by promise</button>
+    <button onclick="loadByNamedAsync()">fetch by named async</button>
+    <button onclick="loadByArrowAsync()">fetch by arrow async</button>
+    <button onclick="loadByTryCatch()">fetch by async await try catch</button>
+
+    <script src="./fetchSystem.js"></script>
+  </body>
+</html>
